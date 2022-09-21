@@ -1,0 +1,474 @@
+@media screen and (max-width: 500px) {
+    #navbar {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .navigate {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    .one {
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .one h3 {
+        width: 100%;
+    }
+
+    .two {
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 50px
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .grid1 {
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+    }
+
+    .logo h2 {
+        color: white;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 12%;
+    }
+
+    .price {
+        display: flex;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    .price h2 {
+        font-size: 30px;
+        color: white;
+    }
+
+    .price p {
+        color: lime;
+        animation: moving-bars 3s infinite;
+        font-size: 12px;
+    }
+
+    .grid2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list p {
+        font-size: 10px;
+        padding: 0.2rem;
+    }
+
+    .coin {
+        border-right: 1px solid blue;
+
+    }
+
+    .name h3 {
+        font-size: 15px;
+    }
+
+    .grid3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .risers {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 60px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .risers h3 {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+
+    .rate {
+
+        font-size: 14px;
+    }
+
+    .rate h2 {
+        font-size: 20px;
+    }
+
+    .first {
+        height: fit-content;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);
+        height: 100%;
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #line-example-4 {
+        height: 150px;
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: inherit;
+    }
+
+    .flexbox {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .first ul {
+        display: flex;
+        align-items: center;
+        width: 110%;
+        margin: auto;
+        justify-content: space-evenly;
+
+    }
+
+    .first ul li {
+        font-size: 11px;
+
+    }
+
+    .first ul li:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .first ul li:nth-child(3) {
+        display: none;
+    }
+
+    .first ul li:nth-child(4) {
+        display: none;
+    }
+
+    .first ul li:nth-child(2) {
+        display: none;
+    }
+
+    .first ul li:nth-child(5) {
+        display: none;
+    }
+
+    .pad {
+        font-size: 10px;
+        padding: 0.2rem;
+    }
+
+    .press ul {
+        border: none;
+    }
+
+    .auto {
+        margin: auto;
+        padding-right: 1rem;
+    }
+
+    .second {
+        width: 60%;
+        height: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    #navbar a:not(:first-child) {
+        display: none;
+    }
+
+    #navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the#navbar with JavaScript when the user clicks on the icon. This class makes the#navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen  and (min-width: 200px){
+    #navbar.responsive {
+        display: block;
+    }
+
+    #navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        left: 400px;
+        background-color: none;
+    }
+
+    #navbar.responsive a.icon:hover {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        left: 400px;
+        background-color: rgba(0, 0, 48, 0.919);
+        width: 50px;
+    }
+
+    #navbar.responsive a {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    #navbar.responsive a:hover {
+        background-color: navy;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    #navbar {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .navigate {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    .one {
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .one h3 {
+        width: 100%;
+    }
+
+    .two {
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 50px
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .grid1 {
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+    }
+
+    .logo h2 {
+        color: white;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 12%;
+    }
+
+    .price {
+        display: flex;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    .price h2 {
+        font-size: 30px;
+        color: white;
+    }
+
+    .price p {
+        color: lime;
+        animation: moving-bars 3s infinite;
+        font-size: 12px;
+    }
+
+    .grid2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list p {
+        font-size: 10px;
+        padding: 0.2rem;
+    }
+
+    .coin {
+        border-right: 1px solid blue;
+
+    }
+
+    .name h3 {
+        font-size: 15px;
+    }
+
+    .grid3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .risers {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 60px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .risers h3 {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+
+    .rate {
+
+        font-size: 14px;
+    }
+
+    .rate h2 {
+        font-size: 20px;
+    }
+
+    .first {
+        height: fit-content;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);
+        height: 100%;
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #line-example-4 {
+        height: 150px;
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: inherit;
+    }
+
+    .flexbox {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .first ul {
+        display: flex;
+        align-items: center;
+        width: 110%;
+        margin: auto;
+        justify-content: space-evenly;
+
+    }
+
+    .first ul li {
+        font-size: 11px;
+
+    }
+
+    .first ul li:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .first ul li:nth-child(3) {
+        display: none;
+    }
+
+    .first ul li:nth-child(4) {
+        display: none;
+    }
+
+    .first ul li:nth-child(2) {
+        display: none;
+    }
+
+    .first ul li:nth-child(5) {
+        display: none;
+    }
+
+    .pad {
+        font-size: 10px;
+        padding: 0.2rem;
+    }
+
+    .press ul {
+        border: none;
+    }
+
+    .auto {
+        margin: auto;
+        padding-right: 1rem;
+    }
+
+    .second {
+        width: 60%;
+        height: 100%;
+        margin: auto;
+    }
+}

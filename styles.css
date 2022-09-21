@@ -2,52 +2,52 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     width: 100vw;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(1, 1, 22);
 
 }
+
 main{
     margin-top: 100px;
-    background-color: whitesmoke;
-}
-#navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    background-color: rgb(1, 1, 22);}
+#navbar {
+    background-color: rgba(0, 0, 48, 0.919);
     align-items: center;
-    padding: 1rem;
-    background-color: white;
-    position: fixed;
-}
-nav{
-    width: 50%;
-  
-}
-nav ul{
     display: flex;
-    justify-content: space-between;
-}
-nav ul li{
-    list-style-type: none;
-    font-size: 14px;
     padding: 1rem;
+    overflow: hidden;
+    justify-content: space-evenly;
 }
-nav ul li a{
-   text-decoration: none;
-   color: rgb(22, 21, 21);
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar .icon {
+    display: none;
+}
+#navbar h2{
+ color: white;
 }
 #active{
     color: blue;
     border-bottom: 2px solid blue;
     padding-bottom: 0.8rem;
+    
 }
 .icons{
     display: flex;
-    justify-content: space-between;
+  
     font-size: 25px;
    color: lightgray;
    font-weight: 100;
@@ -56,29 +56,33 @@ nav ul li a{
 }
 #container{
     width: 90%;
+    height: auto;
         margin-top: 100px;
     margin: auto;
    padding: 3rem;
 display: grid;
  grid-template-areas:
     'header one'
-    'content content'
-  'three  four';
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    'content content';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
     row-gap: 200px;
     column-gap: 100px;
     overflow: hidden;
+    
 }
 
 .grid1{
     grid-area: header;
+    
     border-radius: 6px;
     height: 30vh;
     padding: 2rem;
-    background-color: whitesmoke;
-    grid-column: 1 / span 2;
-    width: 40vw;
+
+
+    
+}.logo h2{
+    color: white;
 }
 .logo img{
     width: 8%;
@@ -86,20 +90,18 @@ display: grid;
 }
 .grid2{
     grid-area: one;
-    grid-column: 3 / span 4;
+    
     height: 40vh;
-    width: 40vw;
     border-radius: 6px;
-    background-color: #eee;
-box-shadow: 3px 7px 38px -4px lightgrey;
-margin-left: -16rem;
+
+box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);
 }
 .coin{
     justify-content: space-between;
     height: 30vh;
     width: 100%;
-    background-color: white;
-    border-right: 3px solid #eee;
+    background-color: rgb(1, 1, 22);
+    border-right: 1px solid white;
     border-radius: 1px;
     padding-top: 1rem;
     max-width: 100%;
@@ -110,6 +112,7 @@ margin-left: -16rem;
 }
 .title img {
     width: 25%;
+    
 }
 .title{
     display: flex;
@@ -117,18 +120,19 @@ margin-left: -16rem;
     align-items: center;
     padding: 0.5rem;
 }
-.line{
-   
-    align-items: center;
+.coin:last-of-type{
+    border-right: none;
 }
+
 .name{
     margin: auto;
     width: 60%;
     padding-top: 2rem;
 }
 .name h3{
-    color: #111;
+    color: white;
     font-size: 16px;
+   
 }
 .name p{
     color: grey;
@@ -147,26 +151,29 @@ margin-left: -16rem;
     font-size: 14px;
 }
 .grid3{
-    width: 87vw;
     grid-area: content;
+        margin-top: 70px;
+    width: 98%;
     padding: 1rem;
-    
-    grid-column: 1 / span 3;
     height: 30vh;
     display: flex;
-     background-color: white;
-box-shadow: 3px 7px 38px -4px lightgrey;    border-radius: 10px;
+ box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);    border-radius: 10px;
 }
 .risers{
     height: 30vh;
       width: 40%;
     border-right: 3px solid #eee;
+    padding-right: 0.5rem;
 }
-
+.black_text{
+    color: white;
+}
 .rate h2{
     font-size: 35px;
     text-align: center;
+    color: white;
 }
+
 .color2{
     color: grey;
 }
@@ -181,6 +188,7 @@ box-shadow: 3px 7px 38px -4px lightgrey;    border-radius: 10px;
 .risers h3{
     padding-left: 2rem;
     padding-bottom: 3rem;
+    color: white;
 }
 .right{
     float: right;
@@ -191,53 +199,81 @@ box-shadow: 3px 7px 38px -4px lightgrey;    border-radius: 10px;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
+
 }
-.grid4{
-    grid-area: three;
-    background-color: white;   
-        grid-column: 1 / span 2;
+.first{
+      height: fit-content; 
+      width: 65%; 
       border-radius: 10px;
+        box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);
+        height: 55vh;
         padding: 1rem;
-        box-shadow: 3px 7px 38px -4px lightgrey;
-        width: 120vh;
-        height: 60vh;
-        
+       
 }
-.grid4 ul{
+.flexbox{
+ display: flex;
+ width: 100%;
+ justify-content: space-evenly;
+ height: 70vh;
+}
+.first ul{
     display: flex;
-    padding: 1rem;
     display: flex;
-        justify-content: space-between;
-        align-items: center;
+    align-items: center;
+     width: 100%;
+     margin: auto;
+     justify-content: space-evenly;
 }
-.chart{
-    height: 70vh;
-    overflow: hidden;
+.auto{
+    margin: auto;
+    padding-right: 1rem;
+}
+.second{
+    background-color: rgb(1, 1, 22);
+    width: 20%;
     padding: 1rem;
-    border: 1px solid red;
+    box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);
+        height: 55vh;
+        border-radius: 20px;
 }
-
-
-.grid4 ul li {
+.logo_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 49, 0.369);
+    padding: 1rem;
+}
+.logo_text img{
+    width: 17%;
+}
+.logo_text h3{
+    font-size: 13px;
+    font-weight: bolder;
+}
+.collective{
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 49, 0.369);
+}
+.collective h3{
+    font-size: 12px;
+    color: white;
+}
+.first ul li {
     list-style-type: none;
     font-size: 13px;
     padding: 1rem;
 }
 
-.grid4 ul li a {
+.first ul li a {
     text-decoration: none;
-    color: rgb(22, 21, 21);
+    color: white;
 }
-.grid5{
-    grid-area: four;
-    background-color: purple;
-        grid-column: 3 / span 5;
-        width: 22vw;
-}
+
 
 select{
     border: none;
-    background-color: whitesmoke;
+   color: white;
+   background-color: inherit;
 }
 .navigate{
     width: 100%;
@@ -254,11 +290,17 @@ select{
     padding-right: 6rem;
 }
 .color{
-    color: black;
+    color: blue;
 }
 .logo{
     display: flex;
     align-items: center;
+    padding: 0.5rem;
+}
+.logo img{
+    animation-name: appear;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
 }
 .logo h2{
     padding-left: 0.55rem;
@@ -276,6 +318,7 @@ select{
 }
 .price h2{
     font-size: 50px;
+    color: white;
 }
 .price p{
     color: lime;
@@ -291,11 +334,30 @@ select{
     padding-left: 2.2rem;
     padding-bottom: 0.2rem;
     font-size: 12px;
+    color: white;
 }
 .pad{
-    color: blue;
-    font-size: 20px;
+    color: royalblue;
+    font-size: 14px;
+    
+    
 }
+.list a{
+    color: white;
+    text-decoration: none;
+}
+.pad i{
+           
+            border-radius: 20px;
+            color: white;
+            background-color: royalblue;
+            padding: 0.6rem;
+            cursor: pointer;
+}
+.pad i:last-child{
+    background-color: grey;
+}
+    
 .list{
     display: flex;
     justify-content: space-evenly;
@@ -310,13 +372,7 @@ select{
     font-style: bold;
     padding: 0.3rem;
 }
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 200,
-        'GRAD' 200,
-        'opsz' 48
-}
+
 .b-r{
     border-radius: 20px;
 }
@@ -326,17 +382,283 @@ select{
     
 }
 
-#column-example-20 {
+#line-example-4 {
     height: 200px;
-    max-width: 400px;
+    max-width: 700px;
     margin: 0 auto;
-    max-height: 210px;
+    background-color: inherit;
+}
+.press{
+    justify-content: space-between;
+    margin: auto 1rem;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+   }
+   .press ul{
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    width: 25%;
+   }
+.press ul li{
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+.count{
+   display: flex;
+   width: 25%;
+   align-items: center;
+   border-radius: 10px;
 }
 
-
-#animations-example-3 {
-    height: 200px;
-    max-width: 300px;
-    margin: 0 auto;
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
 }
 
+.normal{
+    color: white;
+    background-color: inherit;
+    font-size: 12px;
+}
+.different{
+    background-color: royalblue;
+    border-radius: 30px;
+    color: white;
+    padding: 0 4rem;
+}
+.fa-bars{
+    display: none;
+}
+/* media queries */
+
+@media screen and (max-width: 1080px )and (min-width: 200px) {
+    #navbar {
+        width: 100%;
+    
+    }
+    #navbar h2{
+        font-size: 15px;
+    }
+  #navbar a{
+    font-size: 14px;
+  }
+    nav {
+        display: none;
+    }
+
+        .fa-bars {
+            display: block;
+            font-size: 20px;
+            color: lightgray;
+        }
+
+    .navigate {
+        width: 100%;
+       margin: auto;
+      
+        justify-content: center;
+       
+
+    }
+
+    .one {
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .one h3 {
+        width: 100%;
+    }
+
+    .two {
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 50px
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .grid1 {
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+    }
+
+    .logo h2 {
+        color: white;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 7%;
+    }
+.tags h3{
+    color: white;
+}
+    .price {
+        display: flex;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    .price h2 {
+        font-size: 30px;
+        color: white;
+    }
+
+    .price p {
+        color: lime;
+        animation: moving-bars 3s infinite;
+        font-size: 12px;
+    }
+
+    .grid2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list p {
+        font-size: 10px;
+        padding: 0.2rem;
+    }
+
+    .coin {
+        border-right: 1px solid blue;
+
+    }
+
+    .name h3 {
+        font-size: 15px;
+    }
+
+    .grid3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .risers {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 60px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .risers h3 {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+
+    .rate {
+
+        font-size: 14px;
+    }
+
+    .rate h2 {
+        font-size: 20px;
+    }
+
+    .first {
+        height: fit-content;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 7px 38px -4px rgba(0, 0, 48, 0.919);
+        height: 100%;
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #line-example-4 {
+        height: 150px;
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: inherit;
+    }
+
+    .flexbox {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .first ul {
+        display: flex;
+        align-items: center;
+        width: 110%;
+        margin: auto;
+        justify-content: space-evenly;
+
+    }
+
+    .first ul li {
+        font-size: 11px;
+
+    }
+
+    .first ul li:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .first ul li:nth-child(3) {
+        display: none;
+    }
+
+    .first ul li:nth-child(4) {
+        display: none;
+    }
+
+    .first ul li:nth-child(2) {
+        display: none;
+    }
+
+    .first ul li:nth-child(5) {
+        display: none;
+    }
+
+    .pad {
+        font-size: 10px;
+        padding: 0.2rem;
+    }
+
+    .press ul {
+        border: none;
+    }
+
+    .auto {
+        margin: auto;
+        padding-right: 1rem;
+    }
+
+    .second {
+        width: 60%;
+        height: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 2080px)and (min-width: 200px){
+    .grid1{
+        height: 50vh;
+    }
+}
